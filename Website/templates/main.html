@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+   <head>
+   		<title>Twitter Data Visualization</title>
+   		<style>
+			h1 {
+				    color: #212F3C;
+				}
+				
+			p {
+				    font-family: verdana;
+				    font-size: 20px;
+				}
+	
+			h2 {
+					color: #239B56
+			}
+			table, td, th {
+			    border: 0px solid black;
+			    padding-bottom: 7px;
+			}
+			
+			a{
+				font-size: 20px;
+			}
+			
+			table {
+			    border-collapse: collapse;
+			    width: 15%;
+			    
+			}
+			
+			th {
+			    height: 25px;
+			}
+			.heading{
+				border: 1px solid #333;
+			  	box-shadow: 8px 8px 5px #439;
+			  	padding: 8px 12px;
+			  	background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+			}
+			.toptrends
+			{
+				margin-left: 40px;
+				margin-top: 80px;
+				float: left;
+				height: 450px;
+    			width: 250px;
+    			background-color: #EAF2F8;
+			}
+			.map_show{
+				margin-left: 70px;
+				margin-top: 40px;
+				float: left;
+				width: 620px;
+				height: 625px;
+			}
+			.a1{
+				margin-left: 70px;
+				width: 1480px;
+				height: 2150px;
+				border: 5px solid #123421;
+			}
+			.a2{
+				width: 1400px;
+				height:300px;
+				border: 3px solid #123421; 
+			}
+			.donut_graph{
+				margin-top: 50px;
+				margin-left: 30px;
+				float: left;
+				width: 700px;
+				height: 600px;
+			}
+			.graph_bar{
+				margin-top: 50px;
+				margin-left: 10px;
+				float: left;
+				width: 720px;
+				height: 460px;
+			}
+			.color_bar{
+				margin-top: 40px;
+				margin-left: 60px;
+				float: left;
+				width: 920px;
+				height: 600px;
+				border: 1px solid #73AD21;
+			}
+			.hor_graph{
+				float: left;
+				margin-top: 70px;
+				margin-left: 200px;
+			}
+</style>
+   </head>
+   <body>
+   		<div class = "heading">
+		   <h1><center>Twitter Data Visualization</center></h1>
+		</div>
+   		<div class = "a1">
+	   		<div class = "toptrends">
+				<h2> Top Trends of the Day</h2>
+				<table>
+		         {% for i,value in result %}
+		            <tr>
+		               <th>{{i}}</th>
+		               <td><a target="_blank" href="http://127.0.0.1:5000/trend/{{i}}"> {{ value }} </a></td>
+		            </tr>
+		         {% endfor %}
+		      	</table>
+		    </div>
+		    <div class = "color_bar">
+				<iframe src = "/static/main_page/mult_bar.html" width="910" height="600" frameBorder="0"></iframe>
+			</div>
+			<div class = "donut_graph">
+				<img src = "/static/main_page/Pie.jpeg" width="700" height="600"/>
+			</div>			
+			<div class = "map_show">
+				<iframe src = "/static/main_page/map.html" width="610" height="625" frameBorder="0"></iframe>
+			</div>	
+			<div class = "hor_graph">
+				<iframe src = "/static/main_page/graph_bar.jpeg" width="900" height="600" frameBorder="0"></iframe>
+			</div>
+		</div>
+		
+   		
+  
+   </body>
+</html>

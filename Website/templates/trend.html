@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+   <head>
+   		<title>Twitter Trends</title>
+   		<style>
+   				
+			h1{
+			   color: #212F3C;
+			}
+				
+			p{
+			    font-family: verdana;
+			    font-size: 20px;
+			}
+
+			.heading{
+				border: 1px solid #333;
+			  	box-shadow: 2px 8px 5px #439;
+			  	padding: 8px 12px;
+			  	background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+			}
+			
+			
+			.tweet_head{
+				border: 1px solid #333;
+			  	box-shadow: 2px 8px 5px #003;
+			  	padding: 8px 12px;
+			  	background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+			}
+			
+			.a1{
+				margin-left: 130px;
+				width: 1380px;
+				height: 1700px;
+				border: 5px solid #123421;
+			}
+			
+			.a2{
+				border: 1px solid #333;
+			  	box-shadow: 2px 15px 5px #439;
+			  	padding: 8px 12px;
+			  	background-image: linear-gradient(180deg, #fff, #ddf 60%, #cfc);
+			}
+		
+			.donut{
+				margin-top: 30px;
+				margin-left: 30px;
+				margin-right:20px;
+			}
+			.map{
+				margin-top: 30px;
+				margin-left: 70px;
+				float: left;
+			}
+			.tweets{
+				width: 1200px;
+				height: 430px;
+				border: 5px double black;
+				float: left;
+				margin-top: 30px;
+				margin-left: 60px;
+			}
+			#c1{
+				color: #000002;
+			}
+			.tweet_data{
+				width: 1200px;
+				height: 340px;
+			}
+			img.resize {
+			  max-width:32%;
+			  max-height:32%;
+			}
+			.wordcloud {
+				float: left;
+				margin-top: 160px;
+				width: 300px;
+				height: 300px;
+			}
+			</style>
+   	</head>
+   <body>
+   		<div class = "heading">
+		   <h1><center>Twitter Data Visualization</center></h1>
+		</div>
+		<div class = "a1"> 
+			<div class = "a2">
+				<h1><center> Trend: {{result[1]}}</center></h1> 
+				<h1><center> Rank: {{result[0]}}</center></h1>
+				<h1><center>Count: {{result[2]}}</center></h1>	
+			</div>
+			<div class="donut">
+				<img class="resize" src="/static/Trends/{{result[0]}}/Pie_pos.jpeg">
+				<img class="resize" src="/static/Trends/{{result[0]}}/Pie_neg.jpeg">
+				<img class="resize" src="/static/Trends/{{result[0]}}/Pie_neut.jpeg">
+			</div>
+			<div class="tweets">
+				<div class="tweet_head">
+					<h1 id="c1"><center>Tweets</center></h1>
+				</div>
+				<div class="tweet_data">
+					<marquee behavior="scroll" direction="up" width="90%" height="90%" behavior="alternate" scrolldelay=150>
+				         <ul>{% for value in result[3] %}
+				            <li><p>{{ value }}<p></li>
+				         {% endfor %}</ul>
+					</marquee>
+				</div>	
+			</div>
+			<div class="map">
+				<iframe src = "/static/Trends/{{result[0]}}/Map.html" width="610" height="625" frameBorder="0"></iframe>
+			</div>
+			
+			<div class="wordcloud">
+				<img src="/static/Trends/{{result[0]}}/wordcloud.jpeg">
+			</div>
+		</div> 
+   </body>
+</html>

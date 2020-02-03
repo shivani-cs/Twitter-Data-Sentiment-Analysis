@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bokeh Plot</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.14.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.14.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="e940b7f3-5e1f-4fc1-9c8d-fc2dda5384c4"></div>
+        </div>
+        
+        <script type="application/json" id="61e6f2d8-6733-4943-8a34-c523d6829038">
+          {"44be2bdb-946f-4eeb-9676-50a33752e338":{"roots":{"references":[{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"9a5be051-a5f3-473a-abd8-a0d7d4bd3998","subtype":"Figure","type":"Plot"},"ticker":{"id":"b7dd2b15-715e-4660-a668-d6228a3f4571","type":"CategoricalTicker"}},"id":"ddaace9d-0a15-4736-a72f-4d6455ea0aed","type":"Grid"},{"attributes":{"fill_color":{"field":"x","transform":{"id":"4a3353db-f1f4-405f-9f4a-e1bd064bfd6f","type":"CategoricalColorMapper"}},"line_color":{"value":"white"},"line_dash_offset":15,"line_width":{"value":5},"top":{"field":"counts"},"width":{"value":0.85},"x":{"field":"x"}},"id":"bb0bc48e-11fd-469d-96dd-a44dcdd23ea8","type":"VBar"},{"attributes":{"source":{"id":"264cbae4-451e-4a88-91b3-1e0b2a65fb45","type":"ColumnDataSource"}},"id":"bfc8aa88-261d-43da-9638-eb307c40e053","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_dash_offset":15,"line_width":{"value":5},"top":{"field":"counts"},"width":{"value":0.85},"x":{"field":"x"}},"id":"cfde9190-5c3d-486b-bed0-8da5abf5cd2b","type":"VBar"},{"attributes":{},"id":"b2c61a07-74bc-467d-a6ca-f636713842ec","type":"CategoricalTickFormatter"},{"attributes":{"background_fill_alpha":{"value":0.5},"background_fill_color":{"value":"beige"},"below":[{"id":"8cb3c686-b1dc-46b7-a041-e903907f9d30","type":"CategoricalAxis"}],"left":[{"id":"db28f123-c8c8-4eec-a684-945b38a19f3b","type":"LinearAxis"}],"plot_height":550,"plot_width":900,"renderers":[{"id":"8cb3c686-b1dc-46b7-a041-e903907f9d30","type":"CategoricalAxis"},{"id":"ddaace9d-0a15-4736-a72f-4d6455ea0aed","type":"Grid"},{"id":"db28f123-c8c8-4eec-a684-945b38a19f3b","type":"LinearAxis"},{"id":"bd19326f-a739-40a9-850a-b0a0cbf8a824","type":"Grid"},{"id":"096eff04-50a9-44cf-bb78-4c5764e8b0e5","type":"GlyphRenderer"}],"title":{"id":"a7e05f1b-507c-42f6-9fcd-34d81c48c7c0","type":"Title"},"toolbar":{"id":"bf2530b0-ac81-410c-9569-caf2937ce186","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"f81f0594-e99b-4c21-8b41-9a439c0a6574","type":"FactorRange"},"x_scale":{"id":"129b1a35-b39f-4e33-9909-2a0792de3e78","type":"CategoricalScale"},"y_range":{"id":"cb88fe57-cc8f-4698-baf7-caba8ab059f4","type":"DataRange1d"},"y_scale":{"id":"2b643420-8203-43dc-b059-3a76b069684a","type":"LinearScale"}},"id":"9a5be051-a5f3-473a-abd8-a0d7d4bd3998","subtype":"Figure","type":"Plot"},{"attributes":{"formatter":{"id":"b2c61a07-74bc-467d-a6ca-f636713842ec","type":"CategoricalTickFormatter"},"major_label_orientation":1,"plot":{"id":"9a5be051-a5f3-473a-abd8-a0d7d4bd3998","subtype":"Figure","type":"Plot"},"ticker":{"id":"b7dd2b15-715e-4660-a668-d6228a3f4571","type":"CategoricalTicker"}},"id":"8cb3c686-b1dc-46b7-a041-e903907f9d30","type":"CategoricalAxis"},{"attributes":{},"id":"129b1a35-b39f-4e33-9909-2a0792de3e78","type":"CategoricalScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto"},"id":"bf2530b0-ac81-410c-9569-caf2937ce186","type":"Toolbar"},{"attributes":{},"id":"b7dd2b15-715e-4660-a668-d6228a3f4571","type":"CategoricalTicker"},{"attributes":{"formatter":{"id":"3f8249ec-c8b5-4b9f-8352-360a4c810c7c","type":"BasicTickFormatter"},"plot":{"id":"9a5be051-a5f3-473a-abd8-a0d7d4bd3998","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b06b0cc-2746-4258-b26e-01bb61b64f13","type":"BasicTicker"}},"id":"db28f123-c8c8-4eec-a684-945b38a19f3b","type":"LinearAxis"},{"attributes":{"data_source":{"id":"264cbae4-451e-4a88-91b3-1e0b2a65fb45","type":"ColumnDataSource"},"glyph":{"id":"bb0bc48e-11fd-469d-96dd-a44dcdd23ea8","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"cfde9190-5c3d-486b-bed0-8da5abf5cd2b","type":"VBar"},"selection_glyph":null,"view":{"id":"bfc8aa88-261d-43da-9638-eb307c40e053","type":"CDSView"}},"id":"096eff04-50a9-44cf-bb78-4c5764e8b0e5","type":"GlyphRenderer"},{"attributes":{"end":2,"factors":["Pos","Neg","Neutral"],"palette":["#32CD32","#FF0000","#4169E1"],"start":1},"id":"4a3353db-f1f4-405f-9f4a-e1bd064bfd6f","type":"CategoricalColorMapper"},{"attributes":{},"id":"2b643420-8203-43dc-b059-3a76b069684a","type":"LinearScale"},{"attributes":{"callback":null,"start":0},"id":"cb88fe57-cc8f-4698-baf7-caba8ab059f4","type":"DataRange1d"},{"attributes":{},"id":"5b06b0cc-2746-4258-b26e-01bb61b64f13","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"9a5be051-a5f3-473a-abd8-a0d7d4bd3998","subtype":"Figure","type":"Plot"},"ticker":{"id":"5b06b0cc-2746-4258-b26e-01bb61b64f13","type":"BasicTicker"}},"id":"bd19326f-a739-40a9-850a-b0a0cbf8a824","type":"Grid"},{"attributes":{"callback":null,"column_names":["counts","x"],"data":{"counts":[139,159,2,174,116,10,81,191,28,76,223,1,4,50,0,88,192,20,4,24,0,105,194,1,145,155,0,9,124,2],"x":[["#MaineAsLauraPatola","Pos"],["#MaineAsLauraPatola","Neg"],["#MaineAsLauraPatola","Neutral"],["#FakeLove3rdWin","Pos"],["#FakeLove3rdWin","Neg"],["#FakeLove3rdWin","Neutral"],["Upset","Pos"],["Upset","Neg"],["Upset","Neutral"],["#MissBrasil","Pos"],["#MissBrasil","Neg"],["#MissBrasil","Neutral"],["#AMLOconAlatorre","Pos"],["#AMLOconAlatorre","Neg"],["#AMLOconAlatorre","Neutral"],["#DubNation","Pos"],["#DubNation","Neg"],["#DubNation","Neutral"],["#ConFajardoEnLaPrimera","Pos"],["#ConFajardoEnLaPrimera","Neg"],["#ConFajardoEnLaPrimera","Neutral"],["#SPSBoomSaya","Pos"],["#SPSBoomSaya","Neg"],["#SPSBoomSaya","Neutral"],["#ASAPSummerPlay","Pos"],["#ASAPSummerPlay","Neg"],["#ASAPSummerPlay","Neutral"],["#PodemosHablar","Pos"],["#PodemosHablar","Neg"],["#PodemosHablar","Neutral"]]}},"id":"264cbae4-451e-4a88-91b3-1e0b2a65fb45","type":"ColumnDataSource"},{"attributes":{"plot":null,"text":"Polarity Count for Top Trending Tweets"},"id":"a7e05f1b-507c-42f6-9fcd-34d81c48c7c0","type":"Title"},{"attributes":{"callback":null,"factors":[["#MaineAsLauraPatola","Pos"],["#MaineAsLauraPatola","Neg"],["#MaineAsLauraPatola","Neutral"],["#FakeLove3rdWin","Pos"],["#FakeLove3rdWin","Neg"],["#FakeLove3rdWin","Neutral"],["Upset","Pos"],["Upset","Neg"],["Upset","Neutral"],["#MissBrasil","Pos"],["#MissBrasil","Neg"],["#MissBrasil","Neutral"],["#AMLOconAlatorre","Pos"],["#AMLOconAlatorre","Neg"],["#AMLOconAlatorre","Neutral"],["#DubNation","Pos"],["#DubNation","Neg"],["#DubNation","Neutral"],["#ConFajardoEnLaPrimera","Pos"],["#ConFajardoEnLaPrimera","Neg"],["#ConFajardoEnLaPrimera","Neutral"],["#SPSBoomSaya","Pos"],["#SPSBoomSaya","Neg"],["#SPSBoomSaya","Neutral"],["#ASAPSummerPlay","Pos"],["#ASAPSummerPlay","Neg"],["#ASAPSummerPlay","Neutral"],["#PodemosHablar","Pos"],["#PodemosHablar","Neg"],["#PodemosHablar","Neutral"]],"range_padding":0.1},"id":"f81f0594-e99b-4c21-8b41-9a439c0a6574","type":"FactorRange"},{"attributes":{},"id":"3f8249ec-c8b5-4b9f-8352-360a4c810c7c","type":"BasicTickFormatter"}],"root_ids":["9a5be051-a5f3-473a-abd8-a0d7d4bd3998"]},"title":"Bokeh Application","version":"0.12.14"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('61e6f2d8-6733-4943-8a34-c523d6829038').textContent;
+                  var render_items = [{"docid":"44be2bdb-946f-4eeb-9676-50a33752e338","elementid":"e940b7f3-5e1f-4fc1-9c8d-fc2dda5384c4","modelid":"9a5be051-a5f3-473a-abd8-a0d7d4bd3998"}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    </body>
+</html>
