@@ -15,5 +15,3 @@ These pre-processing techniques include case conversion, punctuation removal, st
 ## Results :-
 
 ![Homepage](https://github.com/shivani-cs/Twitter-Data-Sentiment-Analysis/blob/master/Output/1.png)</br>
-
-![page1](https://github.com/shivani-cs/Twitter-Data-Sentiment-Analysis/blob/master/Output/Pie.jpeg)
